@@ -1,8 +1,8 @@
 {
   "name": "Suspend on Top bar",
   "description": "Move Suspend button to the Top bar",
+  "version": 1,
+  "url": "https://github.com/trofosila/suspend-to-topbar",
   "uuid": "suspend-to-topbar@zeplia.com",
-  "shell-version": [
-    "3.36"
-  ]
+  "shell-version": ["3.36"]
 }
