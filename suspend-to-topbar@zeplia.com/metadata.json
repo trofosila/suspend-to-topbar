@@ -1,0 +1,8 @@
+{
+  "name": "Suspend on Top bar",
+  "description": "Move Suspend button to the Top bar",
+  "uuid": "suspend-to-topbar@zeplia.com",
+  "shell-version": [
+    "3.36"
+  ]
+}
