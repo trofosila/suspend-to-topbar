@@ -2,7 +2,9 @@
 
 ![screenshot](https://raw.githubusercontent.com/trofosila/suspend-to-topbar/master/images/screenshot.png)
 
-A GNOME extension that adds a Suspend button to the Top Bar. Just a simple lifehack to save a few clicks every time you put the PC to sleep.
+A GNOME extension that adds a Suspend button to the Top Bar. Just a simple lifehack to save a few clicks every time you put the PC to sleep.  
+
+As simple as it gets: no configuration, minimalistic, just adds a button and does nothing else.
 
 [<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg" height="100">](https://extensions.gnome.org/extension/3784/suspend-button-in-top-bar/)
 
