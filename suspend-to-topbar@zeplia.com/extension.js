@@ -18,9 +18,14 @@ let SuspendIndicator = class SuspendIndicator extends panelMenu.Button {
     this.add_child(suspend);
 
     this._systemActions = new SystemActions.getDefault();
-    this.connect("button-press-event", () => {
+    this._onButtonPressEventId = this.connect("button-press-event", () => {
       this._systemActions.activateSuspend();
     });
+  }
+
+  destroy() {
+    this.disconnect(this._onButtonPressEventId);
+    super.destroy();
   }
 };
 
