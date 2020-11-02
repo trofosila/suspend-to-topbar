@@ -4,15 +4,12 @@ const { Gio, GObject, St } = imports.gi;
 const { main, panelMenu } = imports.ui;
 const SystemActions = imports.misc.systemActions;
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
-
 const Config = imports.misc.config;
 const SHELL_MINOR = parseInt(Config.PACKAGE_VERSION.split(".")[1]);
 
 let SuspendIndicator = class SuspendIndicator extends panelMenu.Button {
   _init() {
-    super._init(0.0, `${Me.metadata.name} Indicator`, false);
+    super._init(0.0, `Suspend Indicator`, false);
 
     let suspend = new St.Icon({
       gicon: new Gio.ThemedIcon({ name: "media-playback-pause-symbolic" }),
@@ -39,21 +36,13 @@ if (SHELL_MINOR > 30) {
 
 let indicator = null;
 
-function init() {
-  log(`Initializing '${Me.metadata.name}' version ${Me.metadata.version}`);
-}
-
 function enable() {
-  log(`Enabling '${Me.metadata.name}' version ${Me.metadata.version}`);
-
   indicator = new SuspendIndicator();
 
-  main.panel.addToStatusArea(`${Me.metadata.name} Indicator`, indicator);
+  main.panel.addToStatusArea(`Suspend Indicator`, indicator);
 }
 
 function disable() {
-  log(`Disabling '${Me.metadata.name}' version ${Me.metadata.version}`);
-
   if (indicator !== null) {
     indicator.destroy();
     indicator = null;
