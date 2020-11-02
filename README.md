@@ -13,4 +13,4 @@ Bugs should be reported to the [Github issues tracker](https://github.com/trofos
 **Feel free to submit a PR!** You can learn how from this [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/).
 
 ## License
-**Suspend button in Top Bar** is distributed under the terms of the BSD 2-Clause "Simplified" License. See the LICENSE file for details.
+**Suspend button in Top Bar** is distributed under the terms of the BSD 2-Clause "Simplified" License. See LICENSE file for details.
