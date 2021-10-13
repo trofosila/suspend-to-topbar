@@ -1,7 +1,7 @@
 {
   "name": "Suspend button in Top Bar",
   "description": "Adds a Suspend button to the Top Bar. Just a simple lifehack to save a few clicks every time you put the PC to sleep.",
-  "version": 1,
+  "version": 2,
   "url": "https://github.com/trofosila/suspend-to-topbar",
   "uuid": "suspend-to-topbar@zeplia.com",
   "shell-version": ["3.36","3.38","40","41"]
